@@ -1,54 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/back_ground"
+    android:background="@color/main"
     android:layout_height="match_parent"
     tools:context=".Menu">
 
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="416dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-5dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="314dp"
-        android:src="@drawable/logo" />
-
-    <Button
-        android:id="@+id/button_preview"
-        android:layout_width="184dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="112dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="239dp"
-        android:text="Preview"
-        android:background="@android:color/holo_red_dark"
-        android:textColor="@android:color/white" />
-
-    <Button
-        android:id="@+id/button_gallery"
-        android:layout_width="187dp"
-        android:layout_height="39dp"
-        android:layout_alignBottom="@+id/button_preview"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="112dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="-70dp"
-        android:background="@android:color/holo_red_dark"
-        android:text="Gallery"
-        android:textColor="@android:color/white" />
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!--<Button
         android:id="@+id/button_help"
@@ -65,18 +36,56 @@
         android:textColor="@android:color/white" />-->
 
     <Button
+        android:id="@+id/button_preview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/dark_blue"
+        android:text="Camera Preview"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button_gallery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_preview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/dark_blue"
+        android:text="Signs From Gallery"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_preview" />
+
+    <Button
         android:id="@+id/button_quit"
-        android:layout_width="187dp"
-        android:layout_height="39dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/button_gallery"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="112dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="-74dp"
-        android:background="@android:color/holo_red_dark"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/red"
         android:text="Quit"
-        android:textColor="@android:color/white" />
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_gallery" />
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

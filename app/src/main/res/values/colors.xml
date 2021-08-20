@@ -19,4 +19,10 @@
     <color name="blue">#0000FF</color>
     <color name="navy">#000080</color>
     <color name="black">#000000</color>
+    <color name="main">#1a73e8</color>
+    <color name="yelloww">#ffca28</color>
+    <color name="dark_blue">#385574</color>
+    <color name="light_gray">#E5E5E5</color>
+    <color name="more_light_gray">#F1F1F1</color>
+    <color name="dark_gray">#C4C4C4</color>
 </resources>
