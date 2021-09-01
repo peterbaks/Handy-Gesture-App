@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174049163118",
+    "project_id": "gesture-recognition-8eed5",
+    "storage_bucket": "gesture-recognition-8eed5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174049163118:android:734eb8b5b0260134d1b37f",
+        "android_client_info": {
+          "package_name": "mobile.handygestures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174049163118-1i2rv5dt38aki3gka9grop12tjib9fsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuXN6jYmMMRbah0xPxCNEFRyoYa8OIEsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174049163118-1i2rv5dt38aki3gka9grop12tjib9fsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

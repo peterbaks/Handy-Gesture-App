@@ -5,12 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.ThumbnailUtils;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import android.text.format.Time;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.SurfaceView;
 
 import android.view.View;
@@ -27,12 +25,6 @@ import org.opencv.android.Utils;
 import org.opencv.core.Core;
 import org.opencv.core.CvException;
 import org.opencv.core.Mat;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
 
 
 public class Preview extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
