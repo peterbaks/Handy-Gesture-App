@@ -15,15 +15,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Menu"></activity>
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".SignInActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" android:theme="@style/AuthTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Menu" />
+        <activity
+            android:name=".SignUpActivity"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name=".SignInActivity"
+            android:theme="@style/AuthTheme" />
         <activity android:name=".Gallery" />
         <activity android:name=".Help" />
         <activity

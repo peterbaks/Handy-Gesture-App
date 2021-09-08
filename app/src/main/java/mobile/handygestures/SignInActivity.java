@@ -29,7 +29,6 @@ public class SignInActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        //getSupportActionBar().hide();
 
         //signUp.setOnClickListener(v ->
         //Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_registerFragment));

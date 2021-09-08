@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back_ground"
     tools:context=".Gallery">
 
     <ImageView
@@ -71,7 +70,7 @@
         android:layout_marginLeft="138dp"
         android:layout_marginTop="328dp"
         android:layout_marginEnd="138dp"
-        android:background="@android:color/holo_red_dark"
+        android:background="@color/green"
         android:onClick="classify"
         android:text="Classify"
         android:textColor="@android:color/white" />

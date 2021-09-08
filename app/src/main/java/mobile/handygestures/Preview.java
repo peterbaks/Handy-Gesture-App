@@ -206,7 +206,7 @@ public class Preview extends AppCompatActivity implements CameraBridgeViewBase.C
     public void onPause()
     {
         super.onPause();
-        autoDetect.stop();
+        //autoDetect.stop();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
@@ -226,7 +226,7 @@ public class Preview extends AppCompatActivity implements CameraBridgeViewBase.C
 
     public void onDestroy() {
         super.onDestroy();
-        autoDetect.stop();
+        //autoDetect.stop();
         if (mOpenCvCameraView != null)
             mOpenCvCameraView.disableView();
     }
