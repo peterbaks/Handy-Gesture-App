@@ -81,5 +81,13 @@ public class SignInActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        binding.forgotPasswordTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ResetPasswordFragment resetFragment = new ResetPasswordFragment();
+                resetFragment.show(getSupportFragmentManager(), "dialog_password_reset");
+            }
+        });
     }
 }
