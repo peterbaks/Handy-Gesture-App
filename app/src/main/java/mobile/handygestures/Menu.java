@@ -1,6 +1,9 @@
 package mobile.handygestures;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuInflater;
@@ -51,8 +54,21 @@ public class Menu extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                finish();
-                System.exit(0);
+
+
+                new AlertDialog.Builder(Menu.this)
+                        .setMessage("Are you sure you want to exit?")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Menu.this.finish();
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+
+                /*finish();
+                System.exit(0);*/
 
             }
         });
@@ -104,5 +120,19 @@ public class Menu extends AppCompatActivity {
             startActivity(Intent.createChooser(intent, "Send Feedback"));
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Are you sure you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Menu.this.finish();
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }
