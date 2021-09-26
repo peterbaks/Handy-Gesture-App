@@ -10,7 +10,11 @@
         <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/layout/fragment_reset_password.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_screen_one.xml" value="0.246875" />
+        <entry key="app/src/main/res/layout/fragment_screen_three.xml" value="0.26197916666666665" />
+        <entry key="app/src/main/res/layout/fragment_screen_two.xml" value="0.26197916666666665" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.26197916666666665" />
       </map>
     </option>
