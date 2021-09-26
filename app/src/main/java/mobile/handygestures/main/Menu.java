@@ -42,16 +42,7 @@ public class Menu extends AppCompatActivity {
 
             }
         });
-        // make help button
-        /*helpButton = (Button) findViewById(R.id.button_help);
-        helpButton.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Menu.this, Help.class));
-
-            }
-        });*/
         //make quit button
         quitButton = (Button) findViewById(R.id.button_quit);
         quitButton.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +50,7 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+                // Alert dialog -- quit
                 new AlertDialog.Builder(Menu.this)
                         .setMessage("Are you sure you want to exit?")
                         .setCancelable(false)
@@ -70,10 +61,6 @@ public class Menu extends AppCompatActivity {
                         })
                         .setNegativeButton("No", null)
                         .show();
-
-                /*finish();
-                System.exit(0);*/
-
             }
         });
 
@@ -89,6 +76,8 @@ public class Menu extends AppCompatActivity {
         });
     }
 
+
+    // Create Menu
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -96,10 +85,12 @@ public class Menu extends AppCompatActivity {
         return true;
     }
 
+    // Listen to select menu item
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (R.id.help == item.getItemId()) {
             Toast.makeText(this, "Help Clicked", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, Help.class));
             return true;
         }
         else if (R.id.logout == item.getItemId()) {

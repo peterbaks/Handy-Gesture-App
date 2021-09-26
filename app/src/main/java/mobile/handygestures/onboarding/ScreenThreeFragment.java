@@ -36,6 +36,7 @@ public class ScreenThreeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                //Get current User
                 FirebaseUser mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
                 if (mFirebaseUser != null) {

@@ -32,20 +32,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                /*if (firebaseUser != null) {
-                    if (firebaseUser.isEmailVerified()) {
-                        Intent mainIntent = new Intent(SplashActivity.this, Menu.class);
-                        startActivity(mainIntent);
-                        finish();
-                    } else {
-                        Toast.makeText(SplashActivity.this, "Please Verify your account", Toast.LENGTH_SHORT).show();
-                    }
-                } else {
-                    Intent mainIntent = new Intent(SplashActivity.this, SignInActivity.class);
-                    startActivity(mainIntent);
-                    finish();
-                }*/
-
+                // Get current user
                 FirebaseUser mFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
                 if (mFirebaseUser != null && onboardingDone()){
